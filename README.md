@@ -5,7 +5,7 @@ Sebuah proyek website berita/blog yang dibangun sepenuhnya dari nol (*from scrat
 ![Gambar Homepage LBS News](https://i.imgur.com/example.png)
 *(Ganti link di atas dengan URL screenshot homepage proyek Anda)*
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 ### Untuk Pengguna (Sisi Publik)
 - **Tampilan Modern & Responsif**: Desain bersih yang beradaptasi di berbagai ukuran layar, dari desktop hingga mobile.
@@ -29,37 +29,37 @@ Sebuah proyek website berita/blog yang dibangun sepenuhnya dari nol (*from scrat
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 - **Backend**: PHP 8+ (Native, Prosedural)
 - **Database**: MySQL / MariaDB
 - **Frontend**: HTML5, CSS3 (Flexbox, Grid, CSS Variables), JavaScript (ES6)
 - **Server Lokal**: XAMPP / Laragon
 - **Library**:
-    - [CKEditor 4](https://ckeditor.com/ckeditor-4/): Sebagai WYSIWYG editor di panel admin.
-    - [SweetAlert2](https://sweetalert2.github.io/): Untuk notifikasi dan popup konfirmasi yang modern.
+ - [CKEditor 4](https://ckeditor.com/ckeditor-4/): Sebagai WYSIWYG editor di panel admin.
+ - [SweetAlert2](https://sweetalert2.github.io/): Untuk notifikasi dan popup konfirmasi yang modern.
 
 ---
 
-## 🚀 Cara Instalasi & Setup Lokal
+## Cara Instalasi & Setup Lokal
 
 Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal Anda:
 
-1.  **Clone Repositori**
+1. **Clone Repositori**
     ```bash
     git clone [https://github.com/username-anda/nama-repositori.git](https://github.com/username-anda/nama-repositori.git)
     cd nama-repositori
     ```
 
-2.  **Setup Database**
-    - Buka phpMyAdmin.
-    - Buat database baru dengan nama `web_informatif`.
-    - Pilih database tersebut, lalu klik tab **Import**.
-    - Pilih file `.sql` yang sudah Anda ekspor dari database lokal Anda dan jalankan proses impor.
+2. **Setup Database**
+ - Buka phpMyAdmin.
+ - Buat database baru dengan nama `web_informatif`.
+ - Pilih database tersebut, lalu klik tab **Import**.
+ - Pilih file `.sql` yang sudah Anda ekspor dari database lokal Anda dan jalankan proses impor.
 
-3.  **Konfigurasi Koneksi**
-    - Buka file `config/database.php`.
-    - Sesuaikan nilai `$host`, `$username`, `$password`, dan `$database` dengan konfigurasi server lokal Anda.
+3. **Konfigurasi Koneksi**
+ - Buka file `config/database.php`.
+ - Sesuaikan nilai `$host`, `$username`, `$password`, dan `$database` dengan konfigurasi server lokal Anda.
     ```php
     $host = 'localhost';
     $username = 'root';
@@ -67,19 +67,25 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
     $database = 'web_informatif';
     ```
 
-4.  **Setup User Admin**
-    - Pastikan Anda memiliki setidaknya satu user di tabel `users`. Jika belum, jalankan skrip `buat_user.php` untuk menghasilkan *hash password*, lalu perbarui secara manual di database.
-    - **Penting:** Hapus file `buat_user.php` setelah digunakan.
+4. **Setup User Admin**
+ - Pastikan Anda memiliki setidaknya satu user di tabel `users`. Jika belum, jalankan skrip `buat_user.php` untuk menghasilkan *hash password*, lalu perbarui secara manual di database.
+ - **Penting:** Hapus file `buat_user.php` setelah digunakan.
 
-5.  **Izin Folder**
-    - Pastikan folder `uploads/` dapat ditulisi (*writable*) oleh web server agar fitur upload gambar berfungsi.
+5. **Izin Folder**
+ - Pastikan folder `uploads/` dapat ditulisi (*writable*) oleh web server agar fitur upload gambar berfungsi.
 
-6.  **Jalankan Proyek**
-    - Arahkan web server lokal Anda (misalnya melalui Laragon atau XAMPP) ke direktori proyek.
-    - Buka `http://localhost/nama-folder-proyek/` di browser Anda.
+6. **Jalankan Proyek**
+ - Arahkan web server lokal Anda (misalnya melalui Laragon atau XAMPP) ke direktori proyek.
+ - Buka `http://localhost/nama-folder-proyek/` di browser Anda.
 
 ---
 
-## 📄 Lisensi
+## English
+
+**LBS News** is a news/blog website built from scratch with native PHP and MySQL. It includes the public-facing site — responsive layout, dark mode, article grid, article detail pages — and an admin panel for managing all content.
+
+---
+
+## Lisensi
 
 Proyek ini dilisensikan di bawah **MIT License**.
