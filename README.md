@@ -36,8 +36,8 @@ Sebuah proyek website berita/blog yang dibangun sepenuhnya dari nol (*from scrat
 - **Frontend**: HTML5, CSS3 (Flexbox, Grid, CSS Variables), JavaScript (ES6)
 - **Server Lokal**: XAMPP / Laragon
 - **Library**:
- - [CKEditor 4](https://ckeditor.com/ckeditor-4/): Sebagai WYSIWYG editor di panel admin.
- - [SweetAlert2](https://sweetalert2.github.io/): Untuk notifikasi dan popup konfirmasi yang modern.
+    - [CKEditor 4](https://ckeditor.com/ckeditor-4/): Sebagai WYSIWYG editor di panel admin.
+    - [SweetAlert2](https://sweetalert2.github.io/): Untuk notifikasi dan popup konfirmasi yang modern.
 
 ---
 
@@ -52,14 +52,14 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
     ```
 
 2. **Setup Database**
- - Buka phpMyAdmin.
- - Buat database baru dengan nama `web_informatif`.
- - Pilih database tersebut, lalu klik tab **Import**.
- - Pilih file `.sql` yang sudah Anda ekspor dari database lokal Anda dan jalankan proses impor.
+    - Buka phpMyAdmin.
+    - Buat database baru dengan nama `web_informatif`.
+    - Pilih database tersebut, lalu klik tab **Import**.
+    - Pilih file `.sql` yang sudah Anda ekspor dari database lokal Anda dan jalankan proses impor.
 
 3. **Konfigurasi Koneksi**
- - Buka file `config/database.php`.
- - Sesuaikan nilai `$host`, `$username`, `$password`, dan `$database` dengan konfigurasi server lokal Anda.
+    - Buka file `config/database.php`.
+    - Sesuaikan nilai `$host`, `$username`, `$password`, dan `$database` dengan konfigurasi server lokal Anda.
     ```php
     $host = 'localhost';
     $username = 'root';
@@ -68,15 +68,15 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
     ```
 
 4. **Setup User Admin**
- - Pastikan Anda memiliki setidaknya satu user di tabel `users`. Jika belum, jalankan skrip `buat_user.php` untuk menghasilkan *hash password*, lalu perbarui secara manual di database.
- - **Penting:** Hapus file `buat_user.php` setelah digunakan.
+    - Pastikan Anda memiliki setidaknya satu user di tabel `users`. Jika belum, jalankan skrip `buat_user.php` untuk menghasilkan *hash password*, lalu perbarui secara manual di database.
+    - **Penting:** Hapus file `buat_user.php` setelah digunakan.
 
 5. **Izin Folder**
- - Pastikan folder `uploads/` dapat ditulisi (*writable*) oleh web server agar fitur upload gambar berfungsi.
+    - Pastikan folder `uploads/` dapat ditulisi (*writable*) oleh web server agar fitur upload gambar berfungsi.
 
 6. **Jalankan Proyek**
- - Arahkan web server lokal Anda (misalnya melalui Laragon atau XAMPP) ke direktori proyek.
- - Buka `http://localhost/nama-folder-proyek/` di browser Anda.
+    - Arahkan web server lokal Anda (misalnya melalui Laragon atau XAMPP) ke direktori proyek.
+    - Buka `http://localhost/nama-folder-proyek/` di browser Anda.
 
 ---
 
